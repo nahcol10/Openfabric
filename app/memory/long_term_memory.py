@@ -49,11 +49,3 @@ def save_faiss_index(path):
 def load_faiss_index(path):
     vector_store.index = faiss.read_index(path)
 
-# Optional: Test run
-if __name__ == "__main__":
-    add_to_long_term("Ketanji Brown Jackson is awesome", metadata={"type": "fact"})
-    add_to_long_term("foo bar baz", metadata={"type": "note"})
-
-    print("\n🔍 Search Results:")
-    for content, meta in search_long_term("Ketanji Brown Jackson", k=4):
-        print(f"\n📄 {content}\n🧷 Metadata: {meta}")
