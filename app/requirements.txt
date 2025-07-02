@@ -1,0 +1,7 @@
+dateparser
+langchain-community
+langchain-core
+langchain-ollama
+sentence-transformers
+faiss-cpu
+redis
